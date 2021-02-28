@@ -44,9 +44,13 @@ def manipulandoStrings():
     print(senha.upper() == senha2.upper())
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+def print_hello():
     format_string = 'Olá {}, seja bem vindo!!{}'
     print(format_string.format('Fabricio', ':)'))
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hello()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
