@@ -92,3 +92,7 @@ if __name__ == '__main__':
     print(min(numbers))
     basket.clear()
     print(f'empty basket: {basket}')
+
+    import os
+
+    os.system('cls' if os.name == 'nt' else 'clear')
