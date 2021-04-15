@@ -25,6 +25,10 @@ def test2():
     pass
 
 
+def test3():
+    pass
+
+
 def bubble_sort(lista):
     n = len(lista)
     for i in range(n - 1):
