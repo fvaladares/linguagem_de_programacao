@@ -17,6 +17,14 @@ def selection_sort(list_func):
     return list_func
 
 
+def teste():
+    pass
+
+
+def test2():
+    pass
+
+
 def bubble_sort(lista):
     n = len(lista)
     for i in range(n - 1):
