@@ -32,7 +32,10 @@ class Person:
 # TODO: criar um método chamado calcular_pagamento, que recebe as horas trabalhadas.
 # A hora padrão tem valor de 7.5, porém,
 # se for maior do que 21 anos, a hora passa a ser acrescida de 2.5
-#  O método deve retornar o valor total.
+# O método deve retornar o valor total.
+
+# TODO: criar um método para determinar se a pessoa é ou não um adolescente.
+# O método terá o nome é adolecente, e retorna true, caso seja verdade.
 
 def my_print(p):
     print(f'Nome: {p.nome}')
