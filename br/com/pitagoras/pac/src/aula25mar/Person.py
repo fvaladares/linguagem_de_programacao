@@ -29,6 +29,11 @@ class Person:
         # print(f'Agora você tem: {self.idade} :P')
 
 
+# TODO: criar um método chamado calcular_pagamento, que recebe as horas trabalhadas.
+# A hora padrão tem valor de 7.5, porém,
+# se for maior do que 21 anos, a hora passa a ser acrescida de 2.5
+#  O método deve retornar o valor total.
+
 def my_print(p):
     print(f'Nome: {p.nome}')
     print(f'Idade: {p.idade}')
