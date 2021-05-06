@@ -10,7 +10,7 @@ class Person:
         self.idade = idade
 
     def __str__(self):
-        return f'{self.nome} tem {self.idade} anos'
+        return f'{self.nome} tem {self.idade} anos de idade'
 
     def meu_nome(self):
         return self.nome
