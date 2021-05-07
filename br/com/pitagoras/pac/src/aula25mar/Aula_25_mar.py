@@ -1,6 +1,8 @@
 # import functools
 from functools import reduce
 
+from Person import Person
+
 
 def primeira_parte():
     # As chaves não strings"
@@ -74,15 +76,6 @@ def terceira_parte():
     print(f'Difference (set_a - set_b): {set_a - set_b}')
     print(f'Difference (set_b - set_a): {set_b - set_a}')
     print(f'Symetric Diference: {set_a ^ set_b}')
-
-
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def __str__(self):
-        return f'Person ({self.name}, {self.age})'
 
 
 def quarta_parte():
@@ -167,10 +160,20 @@ def quarta_parte():
     print(f'Average age: {average_age}')
 
 
+def quinta_parte():
+    person = Person(nome='Fabricio Valadares', idade=39)
+    print(person)
+    print(f'Salario de {person.name}: R$ {person.calcular_pagamento(10)}')
+    if person.eh_adolescente():
+        print(f'{person.name} eh adolescente')
+    else:
+        print(f'{person.name} está velho')
+
+
 if __name__ == '__main__':
     # primeira_parte()
     # segunda_parte()
     # terceira_parte()
-    quarta_parte()
-
+    # quarta_parte()
+    quinta_parte()
 #     CRIAR UM DICIONARIO ANINHADO, ONDE A CHAVE É A REGIÃO, E OS VALORES, OS ESTADOS PERTENCENTES À REGIÃO.

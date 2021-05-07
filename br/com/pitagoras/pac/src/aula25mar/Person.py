@@ -5,10 +5,12 @@ class Person:
         explicando como a sua classe funciona...
     """
 
+    # Construtor da classe Person (Inicializador) # Método especial.
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
 
+    # Imprimir o objeto. Sobrescrevendo o comportamento do método presente na clase Object.
     def __str__(self):
         return f'{self.nome} tem {self.idade} anos de idade'
 
@@ -28,14 +30,25 @@ class Person:
         # self.idade += 1
         # print(f'Agora você tem: {self.idade} :P')
 
+    # TODO: criar um método chamado calcular_pagamento, que recebe as horas trabalhadas.
+    # A hora padrão tem valor de 7.5, porém,
+    # se for maior do que 21 anos, a hora passa a ser acrescida de 2.5
+    # O método deve retornar o valor total.
+    def calcular_pagamento(self, horas_trabalhadas):
+        taxa_basica = 7.5
+        if self.idade >= 21:
+            taxa_basica += 2.5
 
-# TODO: criar um método chamado calcular_pagamento, que recebe as horas trabalhadas.
-# A hora padrão tem valor de 7.5, porém,
-# se for maior do que 21 anos, a hora passa a ser acrescida de 2.5
-# O método deve retornar o valor total.
+        return (horas_trabalhadas * taxa_basica)
 
-# TODO: criar um método para determinar se a pessoa é ou não um adolescente.
-# O método terá o nome é adolecente, e retorna true, caso seja verdade.
+    # TODO: criar um método para determinar se a pessoa é ou não um adolescente.
+    # O método terá o nome é adolecente, e retorna true, caso seja verdade.
+    def eh_adolescente(self):
+        if self.idade < 18:
+            return True
+        else:
+            return False
+
 
 def my_print(p):
     print(f'Nome: {p.nome}')
