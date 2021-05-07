@@ -1,7 +1,7 @@
 # import functools
 from functools import reduce
 
-from Person import Person
+from Pessoa import Pessoa
 
 
 def primeira_parte():
@@ -92,7 +92,7 @@ def quarta_parte():
     data_filtered = list(filter(is_even, data))
     print(f'data_filtered(even numbers)(função de baixa ordem) = {data_filtered}')
 
-    person_data = [Person('Fabricio', 39), Person('Pollyanna', 39), Person('Gabriel', 17), Person('Miguel', 7)]
+    person_data = [Pessoa('Fabricio', 39), Pessoa('Pollyanna', 39), Pessoa('Gabriel', 17), Pessoa('Miguel', 7)]
     print(f'person_data: {person_data}')
     print('-' * 80)
     for person in person_data:
@@ -161,7 +161,7 @@ def quarta_parte():
 
 
 def quinta_parte():
-    person = Person(nome='Fabricio Valadares', idade=39)
+    person = Pessoa(nome='Fabricio Valadares', idade=39)
     print(person)
     print(f'Salario de {person.name}: R$ {person.calcular_pagamento(10)}')
     if person.eh_adolescente():
