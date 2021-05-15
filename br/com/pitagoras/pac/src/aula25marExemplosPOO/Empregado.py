@@ -1,4 +1,4 @@
-from br.com.pitagoras.pac.src.aula25mar.Pessoa import Pessoa
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.Pessoa import Pessoa
 
 
 class Empregado(Pessoa):

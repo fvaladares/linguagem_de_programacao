@@ -1,4 +1,4 @@
-from br.com.pitagoras.pac.src.aula25mar.Pessoa import Pessoa
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.Pessoa import Pessoa
 
 if __name__ == '__main__':
     person = Pessoa(nome='Fabricio Valadares', idade=39)

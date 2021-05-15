@@ -1,4 +1,4 @@
-from br.com.pitagoras.pac.src.aula25mar.Empregado import Empregado
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.Empregado import Empregado
 
 
 class VendedorViajante(Empregado):

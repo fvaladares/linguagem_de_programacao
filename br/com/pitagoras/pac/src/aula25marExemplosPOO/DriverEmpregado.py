@@ -1,6 +1,6 @@
-from br.com.pitagoras.pac.src.aula25mar.Empregado import Empregado
-from br.com.pitagoras.pac.src.aula25mar.Pessoa import Pessoa
-from br.com.pitagoras.pac.src.aula25mar.VendedorViajante import VendedorViajante
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.Empregado import Empregado
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.Pessoa import Pessoa
+from br.com.pitagoras.pac.src.aula25marExemplosPOO.VendedorViajante import VendedorViajante
 
 if __name__ == '__main__':
     print('Pessoa')
