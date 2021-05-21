@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import date, datetime
 
-# Cria banco de dados
+# Cria banco de nomes
 conn = sqlite3.connect('aulaDB.db')
 print(type(conn))
 
@@ -47,7 +47,7 @@ cursor = conn.cursor()
 # cursor.execute(ddl_create)
 print("Tabela criada!")
 
-# Insere dados dentro da tabela no mesmo banco, pois está na mesma conexão
+# Insere nomes dentro da tabela no mesmo banco, pois está na mesma conexão
 cursor.execute("""
     INSERT INTO fornecedor (nome_fornecedor, cnpj, cidade, estado, cep, data_cadastro)
     VALUES ('Empresa A', '11.111.111/1111-11', 'São Paulo', 'SP', '11111-111', '2020-01-01')
