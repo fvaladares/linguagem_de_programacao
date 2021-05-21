@@ -1,6 +1,7 @@
 import pandas as pd
 
-if __name__ == '__main__':
+
+def primeira_parte():
     nomes = ("Fabricio Marcos Túlio Carlos".split())
     # print(f'Tipo de dado {type(nomes)}')
     telefones = [31993576193, 12349876, 1234, 98765]
@@ -24,5 +25,24 @@ if __name__ == '__main__':
     print(f'Dados: {dados}')
     meu_data_frame = pd.DataFrame(data=dados, columns=['nome', 'telefone', 'idade'])
     print(f'Dataframe: \n{meu_data_frame}')
-    print(f'Idade média: {meu_data_frame["idade"].mean()}')
-    print(f'Resumo dos dados (dataframe) {}')
+    print(f'Idade média: \n{meu_data_frame["idade"].mean()}')
+    print(f'Resumo dos dados (dataframe) \n{meu_data_frame.describe()}')
+
+
+def segunda_parte():
+    dataset = pd.read_csv("/home/fabricio/Documents/Lecture/code/cursos-prouni.csv.csv")
+    # print(dataset)
+    print(dataset.info())
+    print(f"Shape: \n{dataset.shape}")
+    print('-' * 20)
+    print(f"Mean: \n{dataset.mean()}")
+    print('-' * 20)
+    print(dataset.describe())
+    print('-' * 20)
+    print('-' * 50)
+    print(dataset['mensalidade'].mean())
+
+
+if __name__ == '__main__':
+    # primeira_parte()
+    segunda_parte()
